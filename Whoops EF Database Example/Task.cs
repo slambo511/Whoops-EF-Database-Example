@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EFS_DatabaseExample
+namespace Whoops_EF_Database_Example
 {
     public class Task
     {

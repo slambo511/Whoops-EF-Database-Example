@@ -1,10 +1,10 @@
 ﻿using System;
-using System.Linq;
 using System.Data.SqlClient;
+using System.Linq;
 
 // Install-Package EntityFramework via Nuget Package Manager console.
 
-namespace EFS_DatabaseExample
+namespace Whoops_EF_Database_Example
 {
     class Program
     {
@@ -81,7 +81,7 @@ namespace EFS_DatabaseExample
 
                     // Show tasks after the 'Delete' operation - there should be 0 tasks
                     Console.WriteLine("\nTasks after delete:");
-                    var tasksAfterDelete = (from t in context.Tasks select t).ToList<Task>();
+                    var tasksAfterDelete = (from t in context.Tasks select t).ToList();
                     if (tasksAfterDelete.Count == 0)
                     {
                         Console.WriteLine("[None]");

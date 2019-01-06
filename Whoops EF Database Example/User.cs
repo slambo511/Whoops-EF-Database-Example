@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace EFS_DatabaseExample
+namespace Whoops_EF_Database_Example
 {
     public class User
     {
@@ -11,12 +11,12 @@ namespace EFS_DatabaseExample
 
         public string GetFullName()
         {
-            return this.FirstName + " " + LastName;
+            return FirstName + " " + LastName;
         }
 
         public override string ToString()
         {
-            return "User [id=" + this.UserId + ", name=" + this.GetFullName() + "]";
+            return "User [id=" + UserId + ", name=" + GetFullName() + "]";
         }
     }
 }

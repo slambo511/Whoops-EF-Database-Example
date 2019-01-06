@@ -1,12 +1,12 @@
 ﻿using System.Data.Entity;
 
-namespace EFS_DatabaseExample
+namespace Whoops_EF_Database_Example
 {
     public class EFSampleContext : DbContext
     {
         public EFSampleContext(string connectionString)
         {
-            Database.SetInitializer<EFSampleContext>(new DropCreateDatabaseAlways<EFSampleContext>());
+            Database.SetInitializer(new DropCreateDatabaseAlways<EFSampleContext>());
             Database.Connection.ConnectionString = connectionString;
         }
         public DbSet<User> Users { get; set; }
